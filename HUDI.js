@@ -65,3 +65,19 @@ function toggleLang() {
 
 // Initial update marka page la load gareeyo
 toggleLang();
+
+// ========================
+// WORKERS TOGGLE
+// ========================
+function toggleWorkers() {
+  const section = document.getElementById("workers-section");
+  const btn = document.getElementById("workers-btn");
+  
+  if (section.style.display === "none") {
+    section.style.display = "grid";
+    btn.innerText = "Hide Workers";
+  } else {
+    section.style.display = "none";
+    btn.innerText = "View Workers";
+  }
+}
